@@ -10,7 +10,7 @@
       update_only: yes
       update_cache: yes
     when: ansible_distribution == "CentOS"
- 
+
   - name: install updates (Ubuntu)
     tags: always
     apt:
@@ -65,7 +65,7 @@
       name:
         - httpd
         - php
-      state: latest 
+      state: latest
     when: ansible_distribution == "CentOS"
 
   - name: start httpd (CentOS)
